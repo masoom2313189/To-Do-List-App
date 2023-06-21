@@ -1,7 +1,7 @@
 {
-  "name": "codingninjas_major_project_1",
+  "name": "major_project_1",
   "version": "1.0.0",
-  "description": "coding ninjas mini project one todo application",
+  "description": "Coding Ninjas Project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
