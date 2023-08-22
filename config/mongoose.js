@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/todo_list_db");
+mongoose.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 const db = mongoose.connection;
 // error
 db.on("error", console.error.bind(console, "erroe connecting to db"));
